@@ -26,6 +26,7 @@ def compare_choices() -> List[int]:
             print("Husband choose " + h_c)
             return [1, 2]
     else:
+        print("Both lost")
         print("Wife choose " + w_c)
         print("Husband choose " + h_c)
         return [0, 0]
