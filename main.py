@@ -18,17 +18,15 @@ def compare_choices() -> List[int]:
     if w_c == h_c:
         print("Both win !")
         if w_c == spouses["wife"]:
-            print("Wife choose " + w_c)
-            print("Husband choose " + h_c)
+            print(f"Wife choose {w_c}; husband choose {h_c}")
             return [2, 1]
         else:
-            print("Wife choose " + w_c)
-            print("Husband choose " + h_c)
+            print(f"Husband choose {h_c}; wife choose {w_c}")
             return [1, 2]
     else:
         print("Both lost")
-        print("Wife choose " + w_c)
-        print("Husband choose " + h_c)
+        print(f"Wife choose {w_c}")
+        print(f"Husband choose {h_c}")
         return [0, 0]
 
 
